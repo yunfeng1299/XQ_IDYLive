@@ -16,6 +16,7 @@
 		F70B209C1EBA15070048F8B8 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70B209A1EBA15070048F8B8 /* Follow.storyboard */; };
 		F70B209F1EBA15320048F8B8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70B209D1EBA15320048F8B8 /* Profile.storyboard */; };
 		F70B20A21EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20A11EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift */; };
+		F70B20B81EBA20C20048F8B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20B71EBA20C20048F8B8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F70B209B1EBA15070048F8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Follow.storyboard; sourceTree = "<group>"; };
 		F70B209E1EBA15320048F8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		F70B20A11EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		F70B20B71EBA20C20048F8B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				F70B20951EBA14B30048F8B8 /* Home.storyboard */,
+				F70B20B71EBA20C20048F8B8 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			files = (
 				F70B207D1EBA0AD40048F8B8 /* AppDelegate.swift in Sources */,
 				F70B20A21EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift in Sources */,
+				F70B20B81EBA20C20048F8B8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

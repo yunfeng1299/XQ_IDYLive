@@ -30,7 +30,7 @@
         <!--首页-->
         <scene sceneID="pyF-Rw-ubt">
             <objects>
-                <viewController id="KWO-Pg-QFr" sceneMemberID="viewController">
+                <viewController id="KWO-Pg-QFr" customClass="HomeViewController" customModule="Imitate_DY" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ocn-gn-OGW"/>
                         <viewControllerLayoutGuide type="bottom" id="IxZ-8A-QEJ"/>
@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8e-tj-4YJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179" y="-1024"/>
+            <point key="canvasLocation" x="1178" y="-1030"/>
         </scene>
     </scenes>
     <resources>
