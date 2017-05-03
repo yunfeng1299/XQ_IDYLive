@@ -17,6 +17,9 @@
 		F70B209F1EBA15320048F8B8 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70B209D1EBA15320048F8B8 /* Profile.storyboard */; };
 		F70B20A21EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20A11EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift */; };
 		F70B20B81EBA20C20048F8B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20B71EBA20C20048F8B8 /* HomeViewController.swift */; };
+		F70B20BA1EBA2C4A0048F8B8 /* ChannelTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20B91EBA2C4A0048F8B8 /* ChannelTitleView.swift */; };
+		F70B20BC1EBA38720048F8B8 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20BB1EBA38720048F8B8 /* common.swift */; };
+		F70B20BE1EBA41C70048F8B8 /* ChannelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20BD1EBA41C70048F8B8 /* ChannelContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		F70B209E1EBA15320048F8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		F70B20A11EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		F70B20B71EBA20C20048F8B8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F70B20B91EBA2C4A0048F8B8 /* ChannelTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTitleView.swift; sourceTree = "<group>"; };
+		F70B20BB1EBA38720048F8B8 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		F70B20BD1EBA41C70048F8B8 /* ChannelContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				F70B20A01EBA1B230048F8B8 /* extension */,
+				F70B20BB1EBA38720048F8B8 /* common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -175,6 +182,8 @@
 		F70B20A51EBA1FBE0048F8B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F70B20B91EBA2C4A0048F8B8 /* ChannelTitleView.swift */,
+				F70B20BD1EBA41C70048F8B8 /* ChannelContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,7 +390,10 @@
 			files = (
 				F70B207D1EBA0AD40048F8B8 /* AppDelegate.swift in Sources */,
 				F70B20A21EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift in Sources */,
+				F70B20BE1EBA41C70048F8B8 /* ChannelContentView.swift in Sources */,
 				F70B20B81EBA20C20048F8B8 /* HomeViewController.swift in Sources */,
+				F70B20BA1EBA2C4A0048F8B8 /* ChannelTitleView.swift in Sources */,
+				F70B20BC1EBA38720048F8B8 /* common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +587,7 @@
 				F70B208D1EBA0AD40048F8B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

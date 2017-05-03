@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="281" y="-1030"/>
         </scene>
-        <!--首页-->
+        <!--Home View Controller-->
         <scene sceneID="pyF-Rw-ubt">
             <objects>
                 <viewController id="KWO-Pg-QFr" customClass="HomeViewController" customModule="Imitate_DY" customModuleProvider="target" sceneMemberID="viewController">
@@ -38,9 +37,9 @@
                     <view key="view" contentMode="scaleToFill" id="QFx-Ph-eAc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="首页" id="BjS-8r-4Z2"/>
+                    <navigationItem key="navigationItem" id="BjS-8r-4Z2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8e-tj-4YJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

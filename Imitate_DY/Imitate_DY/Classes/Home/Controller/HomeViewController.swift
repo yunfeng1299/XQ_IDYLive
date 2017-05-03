@@ -8,7 +8,23 @@
 
 import UIKit
 
+
+private let kTitleViewH : CGFloat = 40
+
 class HomeViewController: UIViewController {
+    
+    //懒加载控件
+    fileprivate lazy var channelTitleView:ChannelTitleView = {
+        
+        let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
+        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
+        
+        let titleView = ChannelTitleView(frame:titleFrame,isScrollEnable:false,titles:titles)
+        
+        return titleView
+        
+    }()
+    
     
     
     
@@ -27,7 +43,11 @@ extension HomeViewController {
     
     fileprivate func setupUI() {
         
+        automaticallyAdjustsScrollViewInsets = false
+        
         setupNavigationBar()
+        
+        view.addSubview(channelTitleView)
         
     }
     
