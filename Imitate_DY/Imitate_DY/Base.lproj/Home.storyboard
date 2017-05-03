@@ -13,7 +13,7 @@
         <scene sceneID="SxG-af-ugP">
             <objects>
                 <navigationController id="dEm-0J-anb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" id="m7x-k4-MyT"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="m7x-k4-MyT"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xYQ-Bb-nrk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -49,5 +49,6 @@
     </scenes>
     <resources>
         <image name="btn_home_normal" width="24" height="24"/>
+        <image name="btn_home_selected" width="24" height="24"/>
     </resources>
 </document>

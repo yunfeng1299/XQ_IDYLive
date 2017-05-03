@@ -13,7 +13,7 @@
         <scene sceneID="2YB-qf-Z65">
             <objects>
                 <navigationController id="7rr-uv-7dQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="直播" image="btn_column_normal" id="kcw-mF-JcE"/>
+                    <tabBarItem key="tabBarItem" title="直播" image="btn_column_normal" selectedImage="btn_column_selected" id="kcw-mF-JcE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lmp-g1-3m6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -49,5 +49,6 @@
     </scenes>
     <resources>
         <image name="btn_column_normal" width="24" height="24"/>
+        <image name="btn_column_selected" width="24" height="24"/>
     </resources>
 </document>

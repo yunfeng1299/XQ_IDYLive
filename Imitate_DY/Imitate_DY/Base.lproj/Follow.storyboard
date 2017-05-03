@@ -13,7 +13,7 @@
         <scene sceneID="Rt6-oF-g70">
             <objects>
                 <navigationController id="vlo-Gt-85h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关注" image="btn_live_normal" id="JHd-tN-R7O"/>
+                    <tabBarItem key="tabBarItem" title="关注" image="btn_live_normal" selectedImage="btn_live_selected" id="JHd-tN-R7O"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hsE-k3-KZ5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -49,5 +49,6 @@
     </scenes>
     <resources>
         <image name="btn_live_normal" width="30" height="24"/>
+        <image name="btn_live_selected" width="30" height="24"/>
     </resources>
 </document>

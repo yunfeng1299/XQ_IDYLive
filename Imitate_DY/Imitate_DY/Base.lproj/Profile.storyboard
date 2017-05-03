@@ -13,7 +13,7 @@
         <scene sceneID="jOi-Xl-nTX">
             <objects>
                 <navigationController id="TXV-cv-Vdq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" image="btn_user_normal" id="cCM-Jq-7Vc"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="btn_user_normal" selectedImage="btn_user_selected" id="cCM-Jq-7Vc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ppf-KD-sDX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -49,5 +49,6 @@
     </scenes>
     <resources>
         <image name="btn_user_normal" width="24" height="24"/>
+        <image name="btn_user_selected" width="24" height="24"/>
     </resources>
 </document>
