@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+// MARK:- 自定义协议
+protocol ChannelTitleViewDelegate : class {
+    func channelTitleView(_ titleView : ChannelTitleView, selectedIndex index : Int)
+}
+
+
 private let kScrollLineH : CGFloat = 2
 
 class ChannelTitleView: UIView {
@@ -17,6 +24,8 @@ class ChannelTitleView: UIView {
     fileprivate var titles:[String]
     
     fileprivate var currentIndex : Int = 0
+    
+    weak var delegate : ChannelTitleViewDelegate?
     
     //懒加载控件
     fileprivate lazy var titleLabels:[UILabel] = [UILabel]()
@@ -146,16 +155,31 @@ extension ChannelTitleView {
             self.scrollLine.frame.origin.x = scrollLineX
         })
         
+        //让代理属性执行代理方法
+        delegate?.channelTitleView(self, selectedIndex: currentIndex)
         
     }
-    
-    
-    
-    
-    
+ 
 }
 
 
+//MARK :  - 外界调用的方法
+extension ChannelTitleView {
+    
+    func setTitleWithProgress(_ progress:CGFloat,sourceIndex:Int,targetIndex:Int) {
+        
+        let sourceLabel = titleLabels[sourceIndex]
+        let targetLabel = titleLabels[targetIndex]
+        
+        let moveTotalX = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let moveX = moveTotalX * progress
+        scrollLine.frame.origin.x = sourceLabel.frame.origin.x + moveX
+
+        currentIndex = targetIndex
+        
+    }
+    
+}
 
 
 

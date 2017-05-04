@@ -20,6 +20,11 @@
 		F70B20BA1EBA2C4A0048F8B8 /* ChannelTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20B91EBA2C4A0048F8B8 /* ChannelTitleView.swift */; };
 		F70B20BC1EBA38720048F8B8 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20BB1EBA38720048F8B8 /* common.swift */; };
 		F70B20BE1EBA41C70048F8B8 /* ChannelContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B20BD1EBA41C70048F8B8 /* ChannelContentView.swift */; };
+		F7AFCD651EBAB38A00D78386 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFCD641EBAB38A00D78386 /* RecommendViewController.swift */; };
+		F7AFCD671EBAB3A000D78386 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFCD661EBAB3A000D78386 /* GameViewController.swift */; };
+		F7AFCD691EBAB3EA00D78386 /* RecreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFCD681EBAB3EA00D78386 /* RecreationViewController.swift */; };
+		F7AFCD6B1EBAB47800D78386 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFCD6A1EBAB47800D78386 /* FunnyViewController.swift */; };
+		F7AFCD6D1EBAC72000D78386 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFCD6C1EBAC72000D78386 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		F70B20B91EBA2C4A0048F8B8 /* ChannelTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTitleView.swift; sourceTree = "<group>"; };
 		F70B20BB1EBA38720048F8B8 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		F70B20BD1EBA41C70048F8B8 /* ChannelContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelContentView.swift; sourceTree = "<group>"; };
+		F7AFCD641EBAB38A00D78386 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		F7AFCD661EBAB3A000D78386 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		F7AFCD681EBAB3EA00D78386 /* RecreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecreationViewController.swift; sourceTree = "<group>"; };
+		F7AFCD6A1EBAB47800D78386 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		F7AFCD6C1EBAC72000D78386 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +194,7 @@
 			children = (
 				F70B20B91EBA2C4A0048F8B8 /* ChannelTitleView.swift */,
 				F70B20BD1EBA41C70048F8B8 /* ChannelContentView.swift */,
+				F7AFCD6C1EBAC72000D78386 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +211,10 @@
 			children = (
 				F70B20951EBA14B30048F8B8 /* Home.storyboard */,
 				F70B20B71EBA20C20048F8B8 /* HomeViewController.swift */,
+				F7AFCD641EBAB38A00D78386 /* RecommendViewController.swift */,
+				F7AFCD661EBAB3A000D78386 /* GameViewController.swift */,
+				F7AFCD681EBAB3EA00D78386 /* RecreationViewController.swift */,
+				F7AFCD6A1EBAB47800D78386 /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -390,7 +405,12 @@
 			files = (
 				F70B207D1EBA0AD40048F8B8 /* AppDelegate.swift in Sources */,
 				F70B20A21EBA1B690048F8B8 /* UIBarButtonItem-Extension.swift in Sources */,
+				F7AFCD6D1EBAC72000D78386 /* BaseViewController.swift in Sources */,
+				F7AFCD651EBAB38A00D78386 /* RecommendViewController.swift in Sources */,
+				F7AFCD6B1EBAB47800D78386 /* FunnyViewController.swift in Sources */,
+				F7AFCD691EBAB3EA00D78386 /* RecreationViewController.swift in Sources */,
 				F70B20BE1EBA41C70048F8B8 /* ChannelContentView.swift in Sources */,
+				F7AFCD671EBAB3A000D78386 /* GameViewController.swift in Sources */,
 				F70B20B81EBA20C20048F8B8 /* HomeViewController.swift in Sources */,
 				F70B20BA1EBA2C4A0048F8B8 /* ChannelTitleView.swift in Sources */,
 				F70B20BC1EBA38720048F8B8 /* common.swift in Sources */,

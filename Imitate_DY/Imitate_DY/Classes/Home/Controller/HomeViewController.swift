@@ -9,6 +9,9 @@
 import UIKit
 
 
+
+
+
 private let kTitleViewH : CGFloat = 40
 
 class HomeViewController: UIViewController {
@@ -21,7 +24,28 @@ class HomeViewController: UIViewController {
         
         let titleView = ChannelTitleView(frame:titleFrame,isScrollEnable:false,titles:titles)
         
+        titleView.delegate = self
+        
         return titleView
+        
+    }()
+    
+    fileprivate lazy var channelContentView:ChannelContentView = {
+        
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabbarH
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: contentH)
+        
+        var childVcs = [UIViewController]()
+        childVcs.append(RecommendViewController())
+        childVcs.append(GameViewController())
+        childVcs.append(RecreationViewController())
+        childVcs.append(FunnyViewController())
+        
+        let contentView = ChannelContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
+        
+        contentView.delegate = self
+        
+        return contentView
         
     }()
     
@@ -48,6 +72,7 @@ extension HomeViewController {
         setupNavigationBar()
         
         view.addSubview(channelTitleView)
+        view.addSubview(channelContentView)
         
     }
     
@@ -69,3 +94,33 @@ extension HomeViewController {
     
     
 }
+
+//MARK: - 遵守ChanelContentViewDelegate协议：
+extension HomeViewController:ChanelContentViewDelegate {
+    
+    func channelContentView(_ contentView: ChannelContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        
+        
+        channelTitleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+  
+}
+
+//MARK: - 遵守ChannelTitleViewDelegate协议：
+extension HomeViewController:ChannelTitleViewDelegate {
+    
+    func channelTitleView(_ titleView: ChannelTitleView, selectedIndex index: Int) {
+        
+        channelContentView.setCurrentIndex(index)
+        
+        
+    }
+    
+    
+    
+    
+    
+}
+
+
+
